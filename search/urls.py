@@ -1,7 +1,7 @@
 from django.urls import path
-from .views import showtime
-
+from search import views
 
 urlpatterns = [
-    path('', showtime, name='time'),
+    path('', views.show_time, name='time'),
+    path('exception/', views.show_exception, name='exception'),
 ]
